@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ReStyle — контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Контакты</h1>
+    <p>Свяжитесь с нами или предложите свою вещь</p>
+</header>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="catalog.html">Каталог</a>
+    <a href="gallery.html">Галерея</a>
+    <a href="contacts.html">Контакты</a>
+</nav>
+
+<main class="container">
+    <h2>Форма обратной связи</h2>
+    <form onsubmit="alert('Спасибо! Ваша заявка отправлена.'); return false;">
+        <label>Ваше имя:</label>
+        <input type="text" placeholder="Введите имя" required>
+
+        <label>Email:</label>
+        <input type="email" placeholder="Введите email" required>
+
+        <label>Что вы хотите сделать?</label>
+        <select>
+            <option>Купить одежду</option>
+            <option>Продать одежду</option>
+            <option>Задать вопрос</option>
+        </select>
+
+        <label>Сообщение:</label>
+        <textarea placeholder="Напишите сообщение"></textarea>
+
+        <button class="btn" type="submit">Отправить</button>
+    </form>
+
+    <h2>Наши контакты</h2>
+    <ul>
+        <li>Email: restyle@example.com</li>
+        <li>Телефон: +7925000000</li>
+        <li>Город: Москва</li>
+    </ul>
+</main>
+
+<footer>
+    <p>© 2026 ReStyle</p>
+</footer>
+</body>
+</html>
